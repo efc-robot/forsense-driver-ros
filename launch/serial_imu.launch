@@ -7,7 +7,7 @@
     <arg name="ns" default="robot1"/>
 	<!--"frame_id" represents the id of the point cloud data published to ROS-->
     <group ns="$(arg ns)" >
-    <node pkg="serial_imu" name="forsense" type="serial_imu"  output="screen">
+    <node pkg="forsense_imu" name="forsense" type="forsense_imu"  output="screen">
 		<param name="imu_div_name"  type="string" value="$(arg imu_div_name)"/>
 		<param name="imu_topic"  type="string" value="$(arg imu_topic)"/>
         <param name="mag_topic"  type="string" value="$(arg mag_topic)"/>
@@ -18,3 +18,4 @@
     </group>
 
 </launch>
+

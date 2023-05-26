@@ -38,7 +38,7 @@ void get_cmd_by_rate(int rate, std::array<uint8_t, 34> &cmd);
 int main(int argc, char **argv)
 {
 	int rev = 0;
-	ros::init(argc, argv, "serial_imu");
+	ros::init(argc, argv, "forsense_imu");
 	// ros::NodeHandle imu_node_handle;
 	ros::NodeHandle imu_node_handle("~");
 
